@@ -1,0 +1,29 @@
+An Introduction to Go Programming
+
+Baiju Muthukadan
+Architect, ZeOmega
+http://muthukadan.net
+@baijum
+
+* About Me
+
+- Technical Architect at ZeOmega, Bangalore
+- Python Developer for 12+ years
+- FOSS Contributor (Zope, SMC, Koha, SaltStack etc.)
+- Founded the Swathanthra Malayalam Computing (SMC) project in 2001 while studying at REC Calicut (NIT Kozhikode)
+- Conducted many Python related talks and workshops in India
+- In 2013, received the first Kenneth Gonsalves Award for my contributions to the Python community in India
+- In 2014, started using Go for hobby projects
+
+* Facts
+
+- General Purpose Programming Language
+- Free/Open Source
+- Created at Google by Robert Griesemer, Rob Pike and Ken Thompson
+- Development started in 2007 and publicly released in November 2009
+- C like syntax (no semicolons)
+- Object Oriented (Composition over inheritance)
+- Compiled (Statically linked)
+- Garbage collected
+- Statically typed
+
