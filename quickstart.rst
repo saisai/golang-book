@@ -167,33 +167,114 @@ and also add a new line at the end of the string.
 Fundamentals
 ------------
 
-Data Types and Variables
-~~~~~~~~~~~~~~~~~~~~~~~~
+Data Types
+~~~~~~~~~~
 
-In the hello world example, the words that we printed, "Hello, world!"
-is a data.  And the type of that data is string.  Go supports data
-types like bool, string, int etc.
+Data is unorganized facts that requires processing.  In programming,
+the data is processed and organized to be useful.  Data type provides
+a classification for the data.  Date type is often simply called as
+`type`.  Data type is one of the fundamental concept in any
+programming language.  In most of the places in this book, we will say
+data as "value".
 
-These are the basic data types available in Go::
+Consider an example, you want want to work with names of toys in your
+programs.  So, the values of the "names of toys" is the data.  The
+data type that you can use to represent this data is called "string".
+If you are literally writing a string in Go, you can use a double
+quote around the names like this::
 
-  bool
+  "Sheriff Woody"
+  "Buzz Lightyear"
+  "Jessie"
 
-  string
+In the hello world example, we used the string "Hello, World!"
+literally.  Representation of a string value within source code is
+called string literal.
 
-  int  int8  int16  int32  int64
-  uint uint8 uint16 uint32 uint64 uintptr
+Consider a related example, you want to mark whether the toys are male
+or not.  This type of data is called Boolean data.  So, if the toy is
+male, the value will be `true` otherwise `false` as given below::
 
-  byte // alias for uint8
+  {"Sheriff Woody",  true}
+  {"Buzz Lightyear", true}
+  {"Jessie",        false}
 
-  rune // alias for int32
-       // represents a Unicode code point
+Apart from `string` and `bool`, Go has some other data types like
+`int`, `byte`, `float64` etc.
 
-  float32 float64
+Variables
+~~~~~~~~~
 
-  complex64 complex128
+Let's go back to the hello world example, if you want to print the
+hello world message three time.  You will be required to write that
+sentence three times as given below.
 
-The keyword `var` is used to declare a list of variables.  The
-variable declaration can be at package or function level.
+.. code-block:: go
+
+   fmt.Println("Hello, World!")
+   fmt.Println("Hello, World!")
+   fmt.Println("Hello, World!")
+
+This is where the concept called `variable` becoming useful.  Instead
+of using the literal string three times, you can use a short variable
+name to refer that string value.  The variable is like an alias
+referring to the data.  Consider the example below where a variable
+named `hw` is used to refer the "Hello, World!" string literal.
+
+.. code-block:: go
+   :linenos:
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       hw := "Hello, World!"
+       fmt.Println(hw)
+       fmt.Println(hw)
+       fmt.Println(hw)
+   }
+
+As you can see in the above example, we are using two special
+characters (`:=`) in between the variable name and the string literal.
+The colon character immediately followed by equal character is what
+you can use to define a short variable declaration in Go.  However,
+there is a small catch here, the this short syntax for declaring
+variable will only work inside a function definition. The Go compiler
+identify the type of variable as string.  This process of identifying
+data type automatically is called `type inference`.
+
+.. note:: Syntax
+
+   According to Wikipedia, the syntax of a computer language is the
+   set of rules that defines the combinations of symbols that are
+   considered to be a correctly structured document or fragment in
+   that language.
+
+You can also exaplicitly define the type of variable instead of using
+the `:=` syntax.  To define the type of a variable, you can use the
+keyword `var` followed by the name of the type.  Later, to assign a
+string value for the `hw` variable, you can use `=` symbol instead of
+`:=`.  So, the example we can rewrite like this.
+
+.. code-block:: go
+   :linenos:
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       var hw string
+       hw = "Hello, World!"
+       fmt.Println(hw)
+       fmt.Println(hw)
+       fmt.Println(hw)
+   }
+
+The keyword `var` can used to declare more than one variable.  You can
+also assign values along with `var` declaration.  The variable
+declaration can be at package level or inside function.
 
 .. code-block:: go
 
@@ -203,10 +284,10 @@ variable declaration can be at package or function level.
    var variable1, variable2 type = value1, value2
 
 If value is not given, a default zero value will be assigned.  The
-zero value is: 0 for numeric types, false for Boolean type, and empty
-string for strings.
+zero value is: 0 for numeric types (int, int32 etc.), false for
+Boolean type, and empty string for strings.
 
-Here is an example.
+Here is few examples.
 
 .. code-block:: go
 
@@ -215,17 +296,30 @@ Here is an example.
    var length = 36
    var width, height int = 3, 6
 
-Inside a function, the `:=` short assignment statement can be used in
-place of a `var` declaration.  The type of the value will be inferred
-during the compile time.  See these two examples.
+The same examples using short declaration look like this.
 
 .. code-block:: go
 
-   name := "Jack"
+   name := ""
    age := 24
+   length := 36
+   width, height := 3, 6
 
-In the above example, the `name` variable will become a string type
-and the age will become am int type.
+Variable Scope
+~~~~~~~~~~~~~~
+
+Keywords
+~~~~~~~~
+
+The following keywords are reserved and may not be used as identifiers.
+
+::
+
+  break        default      func         interface    select
+  case         defer        go           map          struct
+  chan         else         goto         package      switch
+  const        fallthrough  if           range        type
+  continue     for          import       return       var
 
 For loop
 ~~~~~~~~
