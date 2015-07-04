@@ -321,11 +321,31 @@ etc.  These keywords has special meaning in the language.
 For loop
 ~~~~~~~~
 
-Repeating certain steps is a common requirement in programming.  The
-`for` loop is the only one looping construct available in Go.
+Repeating certain process is a common requirement in programming.  The
+repeatation a process aiming a result is called iteration.  In Go, the
+iteration is performed by using the `for` loop block.
 
-Here is an example `for` loop to get sum of values starting from 0
-up to 10.
+In the previous section about variable, we printed the `Hello, World!`
+message three times.  As you can see there, we repeatedly printed the
+same message.  So, instead of typing the same print statement again
+and again, we can use a `for` loop as given below.
+
+.. code-block:: go
+   :linenos:
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       hw := "Hello, World!"
+       for i := 0; i < 3; i++ {
+           fmt.Println(hw)
+       }
+   }
+
+Here is another example `for` loop to get sum of values starting from
+0 up to 10.
 
 .. code-block:: go
 
