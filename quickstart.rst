@@ -22,7 +22,8 @@ Hello World!
 ------------
 
 Here is our hello world program again, you can type the below code to
-your favorite text editor and save it as ``hello.go``
+your favorite text editor and save it as ``hello.go``.  This program
+will print a message, ``Hello, World!`` into your console/terminal.
 
 .. code-block:: go
    :linenos:
@@ -218,8 +219,10 @@ sentence three times as given below.
 This is where the concept called `variable` becoming useful.  Instead
 of using the literal string three times, you can use a short variable
 name to refer that string value.  The variable is like an alias
-referring to the data.  Consider the example below where a variable
-named `hw` is used to refer the "Hello, World!" string literal.
+referring to the data.  The name of the variable is considered as an
+identifier for the variable.  Consider the example below where a
+variable named `hw` is used to refer the "Hello, World!" string
+literal.
 
 .. code-block:: go
    :linenos:
@@ -305,26 +308,19 @@ The same examples using short declaration look like this.
    length := 36
    width, height := 3, 6
 
-Variable Scope
-~~~~~~~~~~~~~~
-
-Keywords
-~~~~~~~~
-
-The following keywords are reserved and may not be used as identifiers.
-
-::
-
-  break        default      func         interface    select
-  case         defer        go           map          struct
-  chan         else         goto         package      switch
-  const        fallthrough  if           range        type
-  continue     for          import       return       var
+We used names like `hw`, `name`, `age`, `length` etc. as identifiers
+for variables.  An identifier should start with an alpabet, but it can
+contain digits.  But there are certain reserved words called keywords
+which are not allowed to be used as identifiers.  We have already seen
+some keywords like `package`, `import`, `func` and `var`.  In the next
+few sections, we are going to see some more keywords like `for`, `if`
+etc.  These keywords has special meaning in the language.
 
 For loop
 ~~~~~~~~
 
-The `for` loop is the only one looping construct available in Go.
+Repeating certain steps is a common requirement in programming.  The
+`for` loop is the only one looping construct available in Go.
 
 Here is an example `for` loop to get sum of values starting from 0
 up to 10.
