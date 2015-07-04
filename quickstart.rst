@@ -36,16 +36,25 @@ will print a message, ``Hello, World!`` into your console/terminal.
        fmt.Println("Hello, World!")
    }
 
+
 You can open your command line program and run the above program like
 this::
 
   $ go run hello.go
   Hello, World!
 
-This command is easy to use when developing programs.  However, when
-you want to use this program in production environment, it is better
-to create executable binaries.  The next section briefly explain the
-process of building executable binaries and running it.
+What you wrote in the `hello.go` is a structured document.  The
+characters, words, spaces, line breaks and the puctuation characters
+used all are important.  In fact, we followed the "syntax" of Go
+language.  According to Wikipedia, the syntax of a computer language
+is the set of rules that defines the combinations of symbols that are
+considered to be a correctly structured document or fragment in that
+language.
+
+The `go run` command is easy to use when developing programs.
+However, when you want to use this program in production environment,
+it is better to create executable binaries.  The next section briefly
+explain the process of building executable binaries and running it.
 
 Building and Running Programs
 -----------------------------
@@ -246,13 +255,6 @@ there is a small catch here, the this short syntax for declaring
 variable will only work inside a function definition. The Go compiler
 identify the type of variable as string.  This process of identifying
 data type automatically is called `type inference`.
-
-.. note:: Syntax
-
-   According to Wikipedia, the syntax of a computer language is the
-   set of rules that defines the combinations of symbols that are
-   considered to be a correctly structured document or fragment in
-   that language.
 
 You can also exaplicitly define the type of variable instead of using
 the `:=` syntax.  To define the type of a variable, you can use the
