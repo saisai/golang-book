@@ -32,7 +32,7 @@ The Gopher mascot is designed by Renee French and covered under
 
 Thanks to the Golang community for all the helps!  Thanks to the `Read
 the Docs <https://readthedocs.org>`_ for hosting this book.  Thanks to
-`Github <https://github.com/baijum/golang-book>`_ for the Git hosting.
+`GitHub <https://github.com/baijum/golang-book>`_ for the Git hosting.
 Thanks to `Cloudflare <https://www.cloudflare.com/>`_ for DNS.  Thanks
 to `Sphinx <http://sphinx-doc.org/>`_ and `Alabaster
 <https://github.com/bitprophet/alabaster>`_ theme.
