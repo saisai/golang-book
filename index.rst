@@ -2,6 +2,13 @@
 A Comprehensive Guide to Go Programming
 ***************************************
 
+.. sidebar:: Announement mailing list
+
+   If you want to get update about the book like chapter completion,
+   major changes etc., you are welcome to join `the announcement
+   mailing list
+   <https://groups.google.com/forum/#!forum/comprehensive-go>`_.
+
 .. toctree::
    :numbered:
    :maxdepth: 2
