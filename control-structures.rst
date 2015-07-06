@@ -7,16 +7,16 @@ Overview
 --------
 
 Go provides flexible control structure for branching and looping
-logics.  We will go through all the controll structures in this
+logic.  We will go through all the control structures in this
 chapter.
 
 If Condition
 ------------
 
 One of the common logic that is required for programming is branching
-logic.  On certain condition, perform a particular action.  To achive
-this, `if` condition is used, where when an expression evaluted as a
-true, action is performed.  Conside this example::
+logic.  On certain condition, perform a particular action.  To archive
+this, `if` condition is used, where when an expression evaluated as a
+true, action is performed.  Consider this example::
 
   if 1 < 2 {
     fmt.Println("1 is less than 2")
@@ -31,7 +31,7 @@ will be evaluated as true so the print statement given below that will
 get executed.  You can add any number of statements within the braces.
 
 Sometimes you need to perform different set of action if the condition
-is not ture.  Go provides a variation of the `if` syntax with `else`
+is not true.  Go provides a variation of the `if` syntax with `else`
 block for that.
 
 Consider another example::

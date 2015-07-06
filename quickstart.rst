@@ -47,7 +47,7 @@ this::
   Hello, World!
 
 What you wrote in the `hello.go` is a structured document.  The
-characters, words, spaces, line breaks and the puctuation characters
+characters, words, spaces, line breaks and the punctuation characters
 used all are important.  In fact, we followed the "syntax" of Go
 language.  According to Wikipedia, the syntax of a computer language
 is the set of rules that defines the combinations of symbols that are
@@ -262,7 +262,7 @@ variable will only work inside a function definition. The Go compiler
 identify the type of variable as string.  This process of identifying
 data type automatically is called `type inference`.
 
-You can also exaplicitly define the type of variable instead of using
+You can also explicitly define the type of variable instead of using
 the `:=` syntax.  To define the type of a variable, you can use the
 keyword `var` followed by the name of the type.  Later, to assign a
 string value for the `hw` variable, you can use `=` symbol instead of
@@ -317,7 +317,7 @@ The same examples using short declaration look like this.
    width, height := 3, 6
 
 We used names like `hw`, `name`, `age`, `length` etc. as identifiers
-for variables.  An identifier should start with an alpabet, but it can
+for variables.  An identifier should start with an alphabet, but it can
 contain digits.  But there are certain reserved words called keywords
 which are not allowed to be used as identifiers.  We have already seen
 some keywords like `package`, `import`, `func` and `var`.  In the next
@@ -328,7 +328,7 @@ For loop
 ~~~~~~~~
 
 Repeating certain process is a common requirement in programming.  The
-repeatation process aiming a result is called iteration.  In Go, the
+repetition process aiming a result is called iteration.  In Go, the
 iteration is performed by using the `for` loop block.
 
 In the previous section about variable, we printed the `Hello, World!`
@@ -405,7 +405,7 @@ actions.  This could be a deviation from normal flow of your
 instructions.  Go provides `if` conditions for branching logic.
 
 Consider a simple scenario, based on money available you want to buy
-vehicles.  You want to buy a bike, buf if more money is available you
+vehicles.  You want to buy a bike, but if more money is available you
 also want to buy a car.
 
 .. code-block:: go

@@ -2,7 +2,7 @@
 A Comprehensive Guide to Go Programming
 ***************************************
 
-.. sidebar:: Announement mailing list
+.. sidebar:: Announcement mailing list
 
    If you want to get update about the book like chapter completion,
    major changes etc., you are welcome to join `the announcement

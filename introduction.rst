@@ -11,7 +11,7 @@ problems.  Programming is a process starting from formulation of a
 computing problem to producing computer programs (software).  Computer
 programming is part of a larger software development process.
 Programming involves analysis, design and implementation of the
-software. The activity of implementating software is commonly referred
+software. The activity of implementing software is commonly referred
 to as coding.  Sometimes coding involves more than one programming
 language and use of other technologies.  Learning a programming
 language is a key part of the skill required for computer programming
@@ -34,7 +34,7 @@ programming language.
    - 25 keywords
    - two compilers: gc and gccgo
 
-Go, also commonly referred to as golang, is a general purpose
+Go, also commonly referred to as Golang, is a general purpose
 programming language.  Go was initially developed at Google in 2007 by
 Robert Griesemer, Rob Pike, and Ken Thompson.  Go was publicly
 released as a free/open source software in November 2009 by Google.
