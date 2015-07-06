@@ -3,6 +3,9 @@
 Control Structures
 ==================
 
+Overview
+--------
+
 Go provides flexible control structure for branching and looping
 logics.  We will go through all the controll structures in this
 chapter.
@@ -47,6 +50,15 @@ For Loop
 
 Switch Cases
 ------------
+
+Exercises
+---------
+
+Problems
+--------
+
+Summary
+-------
 
 .. raw:: html
 
