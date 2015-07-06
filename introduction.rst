@@ -319,6 +319,13 @@ command::
 
 We will walk through the hello world example in the next chapter.
 
+Summary
+-------
+
+This chapter provided an introduction to Go programming language.
+Also briefly mentioned about other topics required to become a good
+programmer.  The next chapter provides a quickstart to the language.
+
 .. raw:: html
 
    <div id="disqus_thread"></div> <script type="text/javascript"> var
