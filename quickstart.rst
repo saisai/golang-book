@@ -127,8 +127,10 @@ external packages from the current package.  In the above example,
 
 If a package is imported, it should be used somewhere in the code,
 otherwise the compiler will not compile your program and it will raise
-error.  If multiple packages need be imported, you can group the
-imports into a parenthesized, "factored" import statement like this.
+error.  As you can see above, the import declaration starts with a
+word `import` followed by the name of the package in double quotes.
+If multiple packages need be imported, you can group the imports into
+a parenthesized, "factored" import statement like this.
 
 .. code-block:: go
 
@@ -161,10 +163,11 @@ this case, this is a special function named `main`.  A function is a
 collection of instructions or more specifically statements.  A
 function definition starts with `func` keyword followed by function
 name then arguments (parameters) for the function within parenthesis
-and finally statements within curly brackets.  The starting curly
-bracket should be in the same line where function definition started
-and statements should start in the next line.There should be only one
-`main` function for an executable program.
+and finally statements within curly brackets.  The `main` function is
+a special function which doesn't accept any arguments.  The starting
+curly bracket should be in the same line where function definition
+started and statements should start in the next line.  There should be
+only one `main` function for an executable program.
 
 Inside the main function, we are calling the `Println` function
 available inside the `fmt` package.
@@ -325,7 +328,7 @@ For loop
 ~~~~~~~~
 
 Repeating certain process is a common requirement in programming.  The
-repeatation a process aiming a result is called iteration.  In Go, the
+repeatation process aiming a result is called iteration.  In Go, the
 iteration is performed by using the `for` loop block.
 
 In the previous section about variable, we printed the `Hello, World!`
