@@ -3,6 +3,9 @@
 Quickstart
 ==========
 
+Overview
+--------
+
 .. sidebar:: Scratch Programming
 
    If you do not have any prior programming language experience, you
@@ -539,6 +542,12 @@ In the above example, the `Area` function is called in line number 10
 with an argument of `5.0`.  We are using the short variable
 declaration.  The type of the variable `area` will be `float64` as the
 `Area` function returns with that type.
+
+Exercises
+---------
+
+Problems
+--------
 
 Summary
 -------
