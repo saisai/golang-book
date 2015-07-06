@@ -350,6 +350,20 @@ and again, we can use a `for` loop as given below.
        }
    }
 
+The for loop starts with a variable initialization, then semi-colon,
+then a condition which evaluate `true` or `false`, again one more
+semi-colon and an expression to increment value.  After these three
+parts, the block strts with a curly bracket.  You can write any number
+of statements within the block.  In the above example, we are calling
+the `Println` function from `fmt` package to print the hello world
+message.
+
+In the above example, the value `i` was initialized an integer value
+of zero.  In the second part, the condition is checking whether the
+value of `i` is less than 3 and finally in the last part, the value of
+`i` is oncremented by one.  The `++` is called a unary operator.  We
+are going to look into other operators in the next chapter.
+
 Here is another example `for` loop to get sum of values starting from
 0 up to 10.
 
