@@ -644,8 +644,58 @@ declaration.  The type of the variable `area` will be `float64` as the
 Exercises
 ---------
 
-Problems
---------
+**Exercise 1:** Print multiples of 5 for all even numbers below 10
+
+This exercise requires getting all even numbers numbers below 10.  As
+we we have seen above, a `for` loop can be used to get all numbers.
+Then `if` condition can be used with `%` operator to check whether the
+number is even or noi.  The `%` operator given the gives the remainder
+and we can chek it is zero or not for modulus 2.  If the number is
+even use the `*` operator to multiply with 5.
+
+Here is the solution.
+
+.. code-block:: go
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       for i := 1; i < 10; i++ {
+           if i%2 == 0 {
+               fmt.Println(i * 5)
+           }
+       }
+   }
+
+**Exercise 2:** Create a function to reverse a string
+
+Here is the solution.
+
+.. code-block:: go
+
+   package main
+
+   import "fmt"
+
+   func Reverse(s string) string {
+       var r string
+       for _, c := range s {
+           r = string(c) + r
+       }
+       return r
+   }
+
+   func main() {
+       hw := "Hello, World!"
+       rhw := Reverse(hw)
+       fmt.Println(rhw)
+   }
+
+Additional Exercises
+~~~~~~~~~~~~~~~~~~~~
+
 
 Summary
 -------
