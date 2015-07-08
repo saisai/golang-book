@@ -191,7 +191,8 @@ the data is processed and organized to be useful.  Data type provides
 a classification for the data.  Date type is often simply called as
 `type`.  Data type is one of the fundamental concept in any
 programming language.  In most of the places in this book, we will say
-data as "value".
+data as "value".  More advanced data type is often called data
+structures.
 
 Consider an example, you want want to work with names of toys in your
 programs.  So, the values of the "names of toys" is the data.  The
@@ -409,6 +410,86 @@ given below.
        for {
        }
    }
+
+Range clause
+~~~~~~~~~~~~
+
+Sometimes instead of getting index for a sequence, it would be better
+to get the values to peform certain actions.  The `range` clause loop
+over through elements in a variety of data structures including
+string, slice and map.  We are going to see the slice and map data
+structures later in this book.  Here is a simple example to print the
+characters of a string.
+
+.. code-block:: go
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       g := "Golang"
+       for i, v := range g {
+           fmt.Println(i, string(v))
+       }
+   }
+
+If you save this program in `wordchar.go` file and run, the outwill be
+like this::
+
+  $ go run wordchar.go
+  0 G
+  1 o
+  2 l
+  3 a
+  4 n
+  5 g
+
+Range gives index and the value.  In the above example, the index is
+assigned to `i` and value to `v` variables.  In fact, the value will
+be an `int32` type corresponding to the Unicode number.  We used the
+built-in string funtion to convert the number to corresponding string
+value.  As you can see above, each iteration change the value of `i` &
+`v`.
+
+If you are not interested in the index but just the value of string,
+you can use blank identifier (variable).  In Go, underscore is
+considerd as blank identifier which you need not to define and you can
+assign anything to it.  See the example written below to print each
+characters ignoring the index.
+
+.. code-block:: go
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       g := "Golang"
+       for _, v := range g {
+           fmt.Println(string(v))
+       }
+   }
+
+
+If you just want to get the index without value, you can use just use
+one variable to the left of range clause as give below.
+
+.. code-block:: go
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       g := "Golang"
+       for i := range g {
+           fmt.Println(i, string(g[i]))
+       }
+   }
+
+In the above example, we are accessing the value using the index
+syntax: `g[i]`.
 
 If
 ~~
