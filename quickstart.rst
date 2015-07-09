@@ -696,6 +696,18 @@ Here is the solution.
 Additional Exercises
 ~~~~~~~~~~~~~~~~~~~~
 
+**Problem 1:** Find sum of all numbers below 50 divisible by 2 or 3
+with remainder 0
+
+Hint: The numbers completly divisible by 2 or 3 are 2, 3, 4, 6, 8, 9
+... 45, 46, 48.
+
+**Problem 2:** Write a function to check whether the first letter in a
+given string is capital letters in English (A,B,C,D etc).
+
+Hint: The signature of the function definition could be like this:
+``func StartsCapital(s string) bool``.  If the function returns
+`true`, the string passed starts with a capital letter.
 
 Summary
 -------
