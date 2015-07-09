@@ -15,11 +15,11 @@ Overview
    comfortable with Scratch, this book will be much easier to
    understand.
 
-This chapter walks through few fundamental topics in Go.  You should
-be able to write simple programs using Go after reading and practicing
-the examples given in this chapter.  The next 3 sections revisit the
-hello world program introduced in the last chapter.  Later we will
-move on to few fundamental concepts in Go.
+This chapter walks through few basic topics in Go.  You should be able
+to write simple programs using Go after reading and practicing the
+examples given in this chapter.  The next 3 sections revisit the hello
+world program introduced in the last chapter.  Later we will move on
+to few basic topics in Go.
 
 Hello World!
 ------------
@@ -180,8 +180,8 @@ The above function call is a complete statement in Go.  The `Println`
 function print the string into standard output of the terminal/console
 and also add a new line at the end of the string.
 
-Fundamentals
-------------
+Basics
+------
 
 Data Types
 ~~~~~~~~~~
@@ -713,7 +713,7 @@ Summary
 -------
 
 We started with a hello world program and briefly explained it.  Then
-this chapter introduced few basic topic in Go programming language.
+this chapter introduced few basic topics in Go programming language.
 The next chapters will explain the fundamental concepts in more
 detail.
 
