@@ -786,9 +786,9 @@ Hint: The signature of the function definition could be like this:
 `true`, the string passed starts with a capital letter.
 
 **Problem 2:** Write a function to generate Fibonacci numbers below a
- given value.
+given value.
 
-Hint: The signature ``func Fib(n int64)``.  This function can print
+Hint: The signature ``func Fib(n int)``.  This function can print
 the values.
 
 Summary
