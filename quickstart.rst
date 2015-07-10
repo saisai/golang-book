@@ -363,7 +363,7 @@ In the above example, the value `i` was initialized an integer value
 of zero.  In the second part, the condition is checking whether the
 value of `i` is less than 3 and finally in the last part, the value of
 `i` is oncremented by one.  The `++` is called a unary operator.  We
-are going to look into other operators in the next chapter.
+will look into operators in another section later in this chapter.
 
 Here is another example `for` loop to get sum of values starting from
 0 up to 10.
@@ -641,6 +641,43 @@ with an argument of `5.0`.  We are using the short variable
 declaration.  The type of the variable `area` will be `float64` as the
 `Area` function returns with that type.
 
+Operators
+~~~~~~~~~
+
+Programming languages use operators to simplify the usage.  Operators
+behave more or less like functions.  More specifically, operators
+combine operands to form expressions.  We have already seen few
+operators like `:=`, `=`, `+=`, `++`, `*`, `>` and `<`.
+
+The `:=`, `=`, `+=` are assignment operators.  The `*` is the
+multiplication operator.  The `>` and `<` are comparison operators.
+
+Sometimes logical conditions should be checked to proceed with certain
+steps.  Logical operators does these kind kind of checkings.  Let's
+say you want to check whether a particular value is divisible by 3
+and 5.  You can do it like this.
+
+::
+
+  if i%3 == 0 {
+      if i%5 == 0 {
+          // statements goes here
+      }
+  }
+
+The same thing can be achieved using `conditional AND` logical
+operator (``&&``) like this.
+
+::
+
+  if i%3 == 0 && i%5 == 0 {
+      // statements goes here
+  }
+
+Apart from the `conditional AND`, there are `conditional OR` (``||``)
+and NOT (``!``) logical operators.  We will see more about operators
+in the next chapter.
+
 Exercises
 ---------
 
@@ -693,21 +730,66 @@ Here is the solution.
        fmt.Println(rhw)
    }
 
+**Exercise 3:** Find sum of all numbers below 50 completly divisible
+by 2 or 3 (i.e., remainder 0)
+
+The numbers completly divisible by 2 or 3 are 2, 3, 4, 6, 8, 9 ... 45,
+46, 48.
+
+.. code-block:: go
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       sum := 0
+       for i := 1; i < 50; i++ {
+           if i%2 == 0 {
+               sum = sum + i
+           } else {
+               if i%3 == 0 {
+                   sum = sum + i
+               }
+           }
+       }
+       fmt.Println("Sum:", sum)
+   }
+
+The logic can be simplified using a conditional OR operator.
+
+.. code-block:: go
+
+   package main
+
+   import "fmt"
+
+   func main() {
+       sum := 0
+       for i := 1; i < 50; i++ {
+           if i%2 == 0 || i%3 == 0 {
+               sum = sum + i
+           }
+       }
+       fmt.Println("Sum:", sum)
+   }
+
+
 Additional Exercises
 ~~~~~~~~~~~~~~~~~~~~
 
-**Problem 1:** Find sum of all numbers below 50 divisible by 2 or 3
-with remainder 0
-
-Hint: The numbers completly divisible by 2 or 3 are 2, 3, 4, 6, 8, 9
-... 45, 46, 48.
-
-**Problem 2:** Write a function to check whether the first letter in a
+**Problem 1:** Write a function to check whether the first letter in a
 given string is capital letters in English (A,B,C,D etc).
 
 Hint: The signature of the function definition could be like this:
 ``func StartsCapital(s string) bool``.  If the function returns
 `true`, the string passed starts with a capital letter.
+
+**Problem 2:** Write a function to generate Fibonacci numbers below a
+ given value.
+
+Hint: The signature ``func Fib(n int64)``.  This function can print
+the values.
 
 Summary
 -------
