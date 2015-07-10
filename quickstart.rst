@@ -354,7 +354,7 @@ and again, we can use a `for` loop as given below.
 The for loop starts with a variable initialization, then semi-colon,
 then a condition which evaluate `true` or `false`, again one more
 semi-colon and an expression to increment value.  After these three
-parts, the block strts with a curly bracket.  You can write any number
+parts, the block starts with a curly bracket.  You can write any number
 of statements within the block.  In the above example, we are calling
 the `Println` function from `fmt` package to print the hello world
 message.
@@ -362,7 +362,7 @@ message.
 In the above example, the value `i` was initialized an integer value
 of zero.  In the second part, the condition is checking whether the
 value of `i` is less than 3 and finally in the last part, the value of
-`i` is oncremented by one.  The `++` is called a unary operator.  We
+`i` is incremented by one.  The `++` is called a unary operator.  We
 will look into operators in another section later in this chapter.
 
 Here is another example `for` loop to get sum of values starting from
@@ -415,7 +415,7 @@ Range clause
 ~~~~~~~~~~~~
 
 Sometimes instead of getting index for a sequence, it would be better
-to get the values to peform certain actions.  The `range` clause loop
+to get the values to perform certain actions.  The `range` clause loop
 over through elements in a variety of data structures including
 string, slice and map.  We are going to see the slice and map data
 structures later in this book.  Here is a simple example to print the
@@ -434,8 +434,8 @@ characters of a string.
        }
    }
 
-If you save this program in `wordchar.go` file and run, the outwill be
-like this::
+If you save this program in `wordchar.go` file and run, the output
+will be like this::
 
   $ go run wordchar.go
   0 G
@@ -448,13 +448,13 @@ like this::
 Range gives index and the value.  In the above example, the index is
 assigned to `i` and value to `v` variables.  In fact, the value will
 be an `int32` type corresponding to the Unicode number.  We used the
-built-in string funtion to convert the number to corresponding string
+built-in string function to convert the number to corresponding string
 value.  As you can see above, each iteration change the value of `i` &
 `v`.
 
 If you are not interested in the index but just the value of string,
 you can use blank identifier (variable).  In Go, underscore is
-considerd as blank identifier which you need not to define and you can
+considered as blank identifier which you need not to define and you can
 assign anything to it.  See the example written below to print each
 characters ignoring the index.
 
@@ -653,7 +653,7 @@ The `:=`, `=`, `+=` are assignment operators.  The `*` is the
 multiplication operator.  The `>` and `<` are comparison operators.
 
 Sometimes logical conditions should be checked to proceed with certain
-steps.  Logical operators does these kind kind of checkings.  Let's
+steps.  Logical operators does these kind kind of checking.  Let's
 say you want to check whether a particular value is divisible by 3
 and 5.  You can do it like this.
 
@@ -686,8 +686,8 @@ Exercises
 This exercise requires getting all even numbers numbers below 10.  As
 we we have seen above, a `for` loop can be used to get all numbers.
 Then `if` condition can be used with `%` operator to check whether the
-number is even or noi.  The `%` operator given the gives the remainder
-and we can chek it is zero or not for modulus 2.  If the number is
+number is even or not.  The `%` operator given the gives the remainder
+and we can check it is zero or not for modulus 2.  If the number is
 even use the `*` operator to multiply with 5.
 
 Here is the solution.
@@ -730,10 +730,10 @@ Here is the solution.
        fmt.Println(rhw)
    }
 
-**Exercise 3:** Find sum of all numbers below 50 completly divisible
+**Exercise 3:** Find sum of all numbers below 50 completely divisible
 by 2 or 3 (i.e., remainder 0)
 
-The numbers completly divisible by 2 or 3 are 2, 3, 4, 6, 8, 9 ... 45,
+The numbers completely divisible by 2 or 3 are 2, 3, 4, 6, 8, 9 ... 45,
 46, 48.
 
 .. code-block:: go
