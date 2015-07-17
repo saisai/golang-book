@@ -778,6 +778,9 @@ The logic can be simplified using a conditional OR operator.
 Additional Exercises
 ~~~~~~~~~~~~~~~~~~~~
 
+Answers to these additional exercises are given in the :ref:`answers`
+chapter.
+
 **Problem 1:** Write a function to check whether the first letter in a
 given string is capital letters in English (A,B,C,D etc).
 
